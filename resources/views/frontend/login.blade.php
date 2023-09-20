@@ -27,7 +27,7 @@
                             <h2>New to our Shop?</h2>
                             <p>There are advances being made in science and technology
                                 everyday, and a good example of this is the</p>
-                            <a href="#" class="btn_3">Create an Account</a>
+                            <a href={{route("register")}} class="btn_3">Create an Account</a>
                         </div>
                     </div>
                 </div>
@@ -36,18 +36,21 @@
                         <div class="login_part_form_iner">
                             <h3>Welcome Back ! <br>
                                 Please Sign in now</h3>
-                            <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+                            <form class="row contact_form" action="{{ route('login') }}" method="POST" novalidate="novalidate">
+                                @csrf
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="text" class="form-control" id="name" name="name" value=""
-                                        placeholder="Username">
+                                    <input type="email" class="form-control" id="email" name="email" value=""
+                                        placeholder="Email">
+                                        <x-input-error :messages="$errors->get('email')" class="mt-2" />
                                 </div>
                                 <div class="col-md-12 form-group p_star">
                                     <input type="password" class="form-control" id="password" name="password"
                                         value="" placeholder="Password">
+                                        <x-input-error :messages="$errors->get('password')" class="mt-2" />
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <div class="creat_account d-flex align-items-center">
-                                        <input type="checkbox" id="f-option" name="selector">
+                                        <input type="checkbox" id="f-option" name="remember">
                                         <label for="f-option">Remember me</label>
                                     </div>
                                     <button type="submit" value="submit" class="btn_3">
