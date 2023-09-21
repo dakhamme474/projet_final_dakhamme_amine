@@ -63,7 +63,19 @@
                         <div class="hearer_icon d-flex">
                             <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
                             <a href=""><i class="ti-heart"></i></a>
-                            <a href={{route("login")}}><i class="fa-solid fa-user-tie"></i></a>
+                            <a href={{route("login")}}><i class="fa-solid ti-user"></i></a>
+                            @auth
+                                <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+            
+                                <x-responsive-nav-link :href="route('logout')"
+                                        onclick="event.preventDefault();
+                                                    this.closest('form').submit();">
+                                    {{ __('logout ') }}
+                                </x-responsive-nav-link>
+                            </form>
+                            @endauth
+                            
                             <div class="dropdown cart">
                                 <a class="dropdown-toggle" href={{route("shopingcart.cart")}} id="navbarDropdown3" role="button"
                                      aria-haspopup="true" aria-expanded="false">
