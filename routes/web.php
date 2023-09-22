@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProduitController;
 use App\Http\Controllers\ProduitWCntoller;
 use App\Http\Controllers\ProfileController;
@@ -17,25 +18,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.home');
-})->name('frontend.home');
+Route::get('/' , [HomeController::class , "index"])->name("home.index");
+Route::get('/shop' , [HomeController::class , "shop"])->name("shop.shop");
+Route::get('/panier' , [HomeController::class , "panier"])->name("panier.panier");
+Route::get('/contact' , [HomeController::class , "contact"])->name("contact.contact");
+Route::get('/coeur' , [HomeController::class , "coeur"])->name("coeur.coeur");
+Route::get('/singleproduct' , [HomeController::class , "checkout"])->name("single.product");
 
-Route::get('/contact', function () {
-    return view('frontend.contact');
-})->name('contact');
 
-Route::get('/shop', function () {
-    return view('frontend.shop');
-});
-
-Route::get('/panier', function () {
-    return view('frontend.panier');
-});
-
-Route::get('/coeur', function () {
-    return view('frontend.coeur');
-});
 
 Route::get('/allproduitWM', function () {
     return view('backend.allproduitWM');

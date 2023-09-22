@@ -16,7 +16,7 @@
                                                 Sofa</h1>
                                             <p>Incididunt ut labore et dolore magna aliqua quis ipsum
                                                 suspendisse ultrices gravida. Risus commodo viverra</p>
-                                            <a href="#" class="btn_2">buy now</a>
+                                            <a href={{route('single.product')}} class="btn_2">buy now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -34,7 +34,7 @@
                                                 Sofa</h1>
                                             <p>Incididunt ut labore et dolore magna aliqua quis ipsum
                                                 suspendisse ultrices gravida. Risus commodo viverra</p>
-                                            <a href="#" class="btn_2">buy now</a>
+                                            <a href={{route('single.product')}} class="btn_2">buy now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@
                                                 Sofa</h1>
                                             <p>Incididunt ut labore et dolore magna aliqua quis ipsum
                                                 suspendisse ultrices gravida. Risus commodo viverra</p>
-                                            <a href="#" class="btn_2">buy now</a>
+                                            <a href={{route('single.product')}} class="btn_2">buy now</a>
                                         </div>
                                     </div>
                                 </div>

@@ -15,23 +15,23 @@ class UtilisateurSeeder extends Seeder
     {
         User::create( [
             'name' => 'admin',
-            'email' => 'admin@gmail.com',
+            'email' => 'admin@admin.com',
             'email_verified_at' => now(),
-            'password' => '123456789', // password
+            'password' => '12345678', // password
         ])->assignRole('admin');
 
         User::create( [
             'name' => 'dakhamme',
             'email' => 'dakhamme@gmail.com',
             'email_verified_at' => now(),
-            'password' => '123456789', // password
+            'password' => '12345678', // password
         ])->assignRole('user');
 
         User::create( [
             'name' => 'webmaster',
             'email' => 'webmaster@gmail.com',
             'email_verified_at' => now(),
-            'password' => '123456789', // password
+            'password' => '12345678', // password
         ])->assignRole('webmaster');
     }
 }
