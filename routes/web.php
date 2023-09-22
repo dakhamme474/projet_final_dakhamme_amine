@@ -24,6 +24,7 @@ Route::get('/panier' , [HomeController::class , "panier"])->name("panier.panier"
 Route::get('/contact' , [HomeController::class , "contact"])->name("contact.contact");
 Route::get('/coeur' , [HomeController::class , "coeur"])->name("coeur.coeur");
 Route::get('/singleproduct' , [HomeController::class , "checkout"])->name("single.product");
+Route::get('/messagerie' , [HomeController::class , "boite"])->name("messagerie.boite");
 
 
 

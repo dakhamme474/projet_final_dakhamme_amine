@@ -24,4 +24,7 @@ class HomeController extends Controller
     public function checkout(){
         return view('frontend.checkout');
     }
+    public function boite(){
+        return view('backend.boitemessagerie');
+    }
 }

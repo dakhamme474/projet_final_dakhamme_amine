@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Projet</title>
+    <title>Aranoz</title>
     <link rel="icon" href="">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -80,7 +80,7 @@
 
                             <div class=" position-relative bg-black divpanier">
 
-                                <span class="text-light panier">4</span>
+                                <span class="text-light panier">0</span>
 
                                 <a href={{route('panier.panier')}}><i class="fas fa-cart-plus "></i></a>
 
@@ -93,7 +93,7 @@
                                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                                     @auth
                                         <div class=" d-flex ">
-                                            <div class=" d-flex justify-content-center flex-column align-items-center">
+                                            <div class="m-0 p-0 d-flex justify-content-center flex-column align-items-center">
                                                 
                                                 {{ Auth::user()->name }}
                                                 
@@ -105,7 +105,7 @@
                                                     onclick="event.preventDefault();
                                                                 this.closest('form').submit();">
 
-                                                    <i class="fa-solid fa-right-from-bracket m-0 p-0"></i>
+                                                                <i class="fa-solid fa-plug m-0 p-0"></i>
                                                 </x-dropdown-link>
                                             </form>
                                         </div>

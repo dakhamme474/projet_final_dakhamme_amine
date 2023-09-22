@@ -14,157 +14,126 @@ class ProduitSeeder extends Seeder
     public function run(): void
     {
         Produit::create([
-            'titre'=>'p1',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p1.png',
+            'image'=>'img.jpg',
             'createur'=>1,
             'stock'=>10,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p2',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p2.png',
+            'image'=>'img2.jpg',
             'createur'=>1,
             'stock'=>10,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p3',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p3.png',
+            'image'=>'img3.jpg',
             'createur'=>1,
             'stock'=>3,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p4',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p4.png',
+            'image'=>'img4.jpg',
             'createur'=>1,
             'stock'=>10,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p5',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p5.png',
+            'image'=>'img5.jpg',
             'createur'=>1,
             'stock'=>10,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p6',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p6.png',
+            'image'=>'img6.jpg',
             'createur'=>1,
             'stock'=>10,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p7',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p7.png',
+            'image'=>'img7.jpg',
             'createur'=>1,
             'stock'=>10,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p8',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p8.png',
+            'image'=>'img8.jpg',
             'createur'=>1,
             'stock'=>10,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p9',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p9.png',
+            'image'=>'img9.jpg',
             'createur'=>1,
             'stock'=>10,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p10',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p10.png',
+            'image'=>'img9.jpg',
             'createur'=>1,
             'stock'=>10,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p12',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p12.png',
+            'image'=>'img2.jpg',
             'createur'=>1,
             'stock'=>1,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p13',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p13.png',
+            'image'=>'img4.jpg',
             'createur'=>1,
             'stock'=>15,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p14',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p14.png',
+            'image'=>'img.jpg',
             'createur'=>1,
             'stock'=>10,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p15',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p15.png',
+            'image'=>'img8.jpg',
             'createur'=>1,
-            'stock'=>3,
+            'stock'=>10,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
-            'titre'=>'p16',
+            'titre'=>'produit',
             'prix'=>50,
-            'image'=>'p16.png',
+            'image'=>'img5.jpg',
             'createur'=>1,
-            'stock'=>7,
+            'stock'=>10,
             'categorie'=>'Chaise en plastique',
         ]);
-        Produit::create([
-            'titre'=>'p17',
-            'prix'=>90,
-            'image'=>'p17.png',
-            'createur'=>1,
-            'stock'=>7,
-            'categorie'=>'Chaise en bois',
-        ]);
-        Produit::create([
-            'titre'=>'p18',
-            'prix'=>50,
-            'image'=>'p18.png',
-            'createur'=>1,
-            'stock'=>2,
-            'categorie'=>'Chaise en fer',
-        ]);
-        Produit::create([
-            'titre'=>'p19',
-            'prix'=>50,
-            'image'=>'p19.png',
-            'createur'=>1,
-            'stock'=>3,
-            'categorie'=>'Chaise en plastique',
-        ]);
-        Produit::create([
-            'titre'=>'p20',
-            'prix'=>50,
-            'image'=>'p20.png',
-            'createur'=>1,
-            'stock'=>7,
-            'categorie'=>'Chaise en fer',
-        ]);
+
 
     }
 }
