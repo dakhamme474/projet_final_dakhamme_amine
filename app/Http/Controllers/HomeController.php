@@ -17,7 +17,8 @@ class HomeController extends Controller
         return view('frontend.home' , compact('randomProduits' , 'produits' , 'fourProduits' , 'eightrProduits' , 'lastproduit'));
     }
     public function shop(){
-        return view('frontend.shop');
+        $produits =Produit::latest()->paginate(9);
+        return view('frontend.shop',compact("produits"));
     }
     public function panier(){
         return view('frontend.panier');
