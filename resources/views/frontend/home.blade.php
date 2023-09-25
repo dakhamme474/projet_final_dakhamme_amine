@@ -132,13 +132,17 @@
                                 <div id="seconds" class="date"></div>
                             </div>
                         </div>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="enter email address"
-                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <form action="{{route("sendmail.boite")}}" method="POST">
+                            @csrf
+                            <div class="input-group">
+                            <input type="email" name="email" class="form-control" placeholder="enter email address"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2" required>
                             <div class="input-group-append">
-                                <a href="#" class="input-group-text btn_2" id="basic-addon2">book now</a>
+                                <button type="submit" class="input-group-text btn_2" id="basic-addon2">book now</button>
                             </div>
                         </div>
+                        </form>
+                        
                     </div>
                 </div>
             </div>
@@ -193,13 +197,16 @@
                         <h5>Join Our Newsletter</h5>
                         <h2>Subscribe to get Updated
                             with new offers</h2>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="enter email address"
-                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <a href="#" class="input-group-text btn_2" id="basic-addon2">subscribe now</a>
+                            <form action="{{route("sendmail.boite")}}" method="POST">
+                                @csrf
+                                <div class="input-group">
+                                <input type="email" name="email" class="form-control" placeholder="enter email address"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                                <div class="input-group-append">
+                                    <button type="submit" class="input-group-text btn_2" id="basic-addon2">book now</button>
+                                </div>
                             </div>
-                        </div>
+                            </form>
                     </div>
                 </div>
             </div>

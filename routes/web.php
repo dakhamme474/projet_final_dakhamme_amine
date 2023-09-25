@@ -27,6 +27,7 @@ Route::get('/contact' , [HomeController::class , "contact"])->name("contact.cont
 Route::get('/coeur' , [HomeController::class , "coeur"])->name("coeur.coeur");
 Route::get('/singleproduct' , [HomeController::class , "checkout"])->name("single.product");
 Route::get('/messagerie' , [HomeController::class , "boite"])->name("messagerie.boite");
+Route::post('/messagerie/subscribeduser' , [ContactController::class , "sendmail"])->name("sendmail.boite");
 
 // contact store
 
