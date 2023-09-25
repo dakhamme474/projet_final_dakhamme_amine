@@ -6,6 +6,7 @@ use App\Http\Controllers\ProduitController;
 use App\Http\Controllers\ProduitWCntoller;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RoleeController;
+use App\Http\Controllers\showController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,7 +32,8 @@ Route::get('/messagerie' , [HomeController::class , "boite"])->name("messagerie.
 
 Route::post('/sendmail', [ContactController::class, 'store'])->name('mail.contact');
 
-
+// ? show produit
+Route::get("/show/{produit}", [showController::class, "showitem"])->name('show.produit');
 
 Route::get('/allproduitWM', function () {
     return view('backend.allproduitWM');
