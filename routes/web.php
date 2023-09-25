@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProduitController;
 use App\Http\Controllers\ProduitWCntoller;
@@ -25,6 +26,10 @@ Route::get('/contact' , [HomeController::class , "contact"])->name("contact.cont
 Route::get('/coeur' , [HomeController::class , "coeur"])->name("coeur.coeur");
 Route::get('/singleproduct' , [HomeController::class , "checkout"])->name("single.product");
 Route::get('/messagerie' , [HomeController::class , "boite"])->name("messagerie.boite");
+
+// contact store
+
+Route::post('/sendmail', [ContactController::class, 'store'])->name('mail.contact');
 
 
 
