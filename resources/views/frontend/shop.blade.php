@@ -72,7 +72,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <div class="single_product_item">
                                     <a href="{{route("show.produit",$produit->id)}}">
-                                        <img src="{{asset('storage/imgs/ '. $produit->image)}}" alt="">
+                                        <img src="{{asset('storage/imgs/' . $produit->image )}}" alt="">
                                     </a>
                                     <div class="single_product_text">
                                         <h4>{{$produit->name}}</h4>
