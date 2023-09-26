@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use App\Models\Produit;
 use Illuminate\Http\Request;
+use PhpParser\Node\Expr\AssignOp\Concat;
 
 class HomeController extends Controller
 {
@@ -33,6 +35,7 @@ class HomeController extends Controller
         return view('frontend.checkout');
     }
     public function boite(){
-        return view('backend.boitemessagerie');
+        $contacts = Contact::all();
+        return view('backend.boitemessagerie' , compact("contacts"));
     }
 }
